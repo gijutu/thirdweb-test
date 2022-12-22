@@ -34,7 +34,7 @@ const Component: React.FC = () => {
               <Button onClick={mint} disabled={store.isClaiming}>
                 {store.isClaiming
                   ? 'claiming...'
-                  : `MINT (0.0 ETH)`}
+                  : `MINT (${store.claimPrice} ETH)`}
               </Button>
             ) : (
               <Button onClick={connectWallet}>
